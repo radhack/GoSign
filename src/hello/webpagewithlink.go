@@ -23,7 +23,7 @@ func main() {
 
 func handler(w http.ResponseWriter, r *http.Request) {
 
-	fmt.Fprintf(w, "<h1>BUTTONS THAT DO THINGS</h1><br /><p><a href=\"/sigreqwtemplate\">Click Here</a> to trigger a templated signature request.</p>")
+	fmt.Fprintf(w, "<h1>BUTTONS THAT DO THINGS</h1><br /><p><form action=\"/sigreqwtemplate\"><input type=\"submit\" value=\"Click Here\" /></form> to trigger a templated signature request.</p>")
 
 }
 
